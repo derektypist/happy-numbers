@@ -4,3 +4,25 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Happy_number), a happy nu
 
 ## UX
 
+**Getting Started**
+
+Enter a whole number between 1 and 9999 (e.g. 13) and then click on the Submit Button.  You will then get the number you have entered as well as deciding if that number is happy.  Click on the Reset Button to clear the information.
+
+**User Stories**
+
+As a user, if I enter a number that is less than 1 or greater than 9999, I get an error message, `Invalid input.  Please enter a whole number between 1 and 9999.`.
+
+As a user, if I do not enter anything, I get an error message, `Invalid input.  Please enter a whole number between 1 and 9999.`.
+
+As a user, if I enter a number, but it is not an integer, I get an error message, `Invalid input.  Please enter a whole number between 1 and 9999.`.  For example, I have entered 4.5.
+
+As a user, if I enter anything other than a whole number (e.g. text such as bar), I get an error message, `Invalid input.  Please enter a whole number between 1 and 9999.`.
+
+As a user, assuming that my input is valid, I should get information such as:
+
+    You have entered the number 13.
+
+    13 is a happy number
+
+
+
