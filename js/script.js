@@ -22,3 +22,27 @@ function getNumberInfo() {
     document.getElementById('numinfo').innerHTML = txt;
 
 }
+
+// Function to check if the number is happy
+function isHappyNumber(n) {
+    let currentNumber = n;
+    let sumSquares;
+
+    // Check if the current number is not 1 and not 4
+    while (currentNumber !==1 && currentNumber !==4) {
+        // Set Sum of Squares to 0
+        sumSquares = 0;
+        // Calculate the sum of squares of the digits
+        while (currentNumber > 0) {
+            let currentDigit = currentNumber % 10;
+            sumSquares += (currentDigit) * (currentDigit);
+            currentNumber = Math.floor(currentNumber/10);
+        }
+
+        // Set the current number to the sum of squares
+        currentNumber = sumSquares;
+    }
+
+    // Compare the current number to 1 and return
+    return currentNumber == 1;
+}
