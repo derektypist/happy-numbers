@@ -22,7 +22,39 @@ As a user, assuming that my input is valid, I should get information such as:
 
     You have entered the number 13.
 
-    13 is a happy number
+    13 is a happy number.
 
+**Information Architecture**
 
+The number is an integer between 1 and 9999.  Otherwise an error message is displayed.
+
+The function `isHappyNumber(num)` is Boolean.  If it is true, the number is happy.
+
+## Features
+
+Allows the user to enter a number as well as getting the information for that number.  Performs Checks on valid input.
+
+## Technologies
+
+Uses HTML5, CSS3, Google Fonts, Bootstrap 5.1.3 and JavaScript.
+
+## Testing
+
+Ensure the user stories have been met.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/happy-numbers) at the main branch.
+
+## Credits
+
+### Content
+
+Written by me, although used sources such as Rosetta Code and libraries such as Bootstrap.
+
+### Acknowledgements
+
+- [FreeCodeCamp](https://www.freecodecamp.org)
+- [Rosetta Code](https://www.rosettacode.org)
+- [Wikipedia](https://en.wikipedia.org)
 
