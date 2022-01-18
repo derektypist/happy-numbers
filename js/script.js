@@ -12,9 +12,9 @@ function getNumberInfo() {
         txt += `You have entered the number ${num}.<p>`;
         // Check if the number is a happy number
         if (isHappyNumber(num)) {
-            txt += `${num} is a happy number`;
+            txt += `${num} is a happy number.`;
         } else {
-            txt += `${num} is not a happy number`;
+            txt += `${num} is not a happy number.`;
         }
     }
 
@@ -45,4 +45,10 @@ function isHappyNumber(n) {
 
     // Compare the current number to 1 and return
     return currentNumber == 1;
+}
+
+// Function to Clear Information
+function clearInfo() {
+    let txt="";
+    document.getElementById('numinfo').innerHTML = txt;
 }
